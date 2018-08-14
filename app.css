@@ -1,0 +1,30 @@
+
+.output {
+     height: 100px;
+     background: #000;
+  }
+
+  button.btn {
+     width: 75px;
+     height: 75px;
+     border: 1px solid #000;
+  }
+
+  .col-6 button.btn {
+     width: 150px;
+  }
+
+  .calculator-wrapper {
+     width: 300px;
+     margin: 0 auto;
+  }
+
+  .col, .col-3, .col-6 {
+     padding-left: 0;
+     padding-right: 0;
+  }
+
+  .row {
+     margin-left: 0;
+     margin-right: 0;
+  }
