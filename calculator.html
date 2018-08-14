@@ -12,6 +12,32 @@
          height: 100px;
          background: #000;
       }
+
+      button.btn {
+         width: 75px;
+         height: 75px;
+         border: 1px solid #000;
+      }
+
+      .col-6 button.btn {
+         width: 150px;
+      }
+
+      .calculator-wrapper {
+         width: 300px;
+         margin: 0 auto;
+      }
+
+      .col, .col-3, .col-6 {
+         padding-left: 0;
+         padding-right: 0;
+      }
+
+      .row {
+         margin-left: 0;
+         margin-right: 0;
+      }
+
     
     
     </style>
@@ -21,90 +47,93 @@
   <body>
     <div id="container">
        <div class="row">
-          <div class="col-md-4 mx-auto" id="calculator">
-             <div class="card">
-                <div class="row">
-                   <div class="col">
-                        <div class="output"> </div>
-                   </div>
-                </div>
-                <!-- row -->
-                <div class="row">
-                  <div class="col-3">
-                     <button class="btn">AC</button>
+          <div class="calculator-wrapper">
+               <div class="col mx-auto" id="calculator">
+                     
+                        <div class="row">
+                           <div class="col">
+                                <div class="output"> </div>
+                           </div>
+                        </div>
+                        <!-- row -->
+                        <div class="row">
+                          <div class="col-3">
+                             <button class="btn">AC</button>
+                          </div>
+                          <div class="col-3">
+                                <button class="btn">+/-</button>
+                             </div>
+                          <div class="col-3">
+                             <button class="btn">%</button>
+                          </div>
+                          <div class="col-3">
+                             <button class="btn btn-warning">÷</button>
+                          </div>
+                        </div>
+                        <!-- row -->
+                        <div class="row">
+                          <div class="col-3">
+                             <button class="btn">7</button>
+                          </div>
+                          <div class="col-3">
+                                <button class="btn">8</button>
+                             </div>
+                          <div class="col-3">
+                             <button class="btn">9</button>
+                          </div>
+                          <div class="col-3">
+                             <button class="btn btn-warning">x</button>
+                          </div>
+                        </div>
+                        <!-- row -->
+                       <div class="row">
+                          <div class="col-3">
+                             <button class="btn">4</button>
+                          </div>
+                          <div class="col-3">
+                                <button class="btn">5</button>
+                             </div>
+                          <div class="col-3">
+                             <button class="btn">6</button>
+                          </div>
+                          <div class="col-3">
+                             <button class="btn btn-warning">-</button>
+                          </div>
+                        </div>
+                        <!-- row -->
+                       <div class="row">
+                          <div class="col-3">
+                             <button class="btn">1</button>
+                          </div>
+                          <div class="col-3">
+                                <button class="btn">2</button>
+                             </div>
+                          <div class="col-3">
+                             <button class="btn">3</button>
+                          </div>
+                          <div class="col-3">
+                             <button class="btn btn-warning">+</button>
+                          </div>
+                        </div>
+                        <!-- row -->
+                       <div class="row">
+                          <div class="col-6">
+                             <button class="btn">0</button>
+                          </div>
+                          <div class="col-3">
+                             <button class="btn">.</button>
+                          </div>
+                          <div class="col-3">
+                             <button class="btn btn-warning">=</button>
+                          </div>
+                        </div>
+                        <!-- row -->
+                        
+                        
+                     
                   </div>
-                  <div class="col-3">
-                        <button class="btn">+/-</button>
-                     </div>
-                  <div class="col-3">
-                     <button class="btn">%</button>
-                  </div>
-                  <div class="col-3">
-                     <button class="btn btn-warning">÷</button>
-                  </div>
-                </div>
-                <!-- row -->
-                <div class="row">
-                  <div class="col-3">
-                     <button class="btn">7</button>
-                  </div>
-                  <div class="col-3">
-                        <button class="btn">8</button>
-                     </div>
-                  <div class="col-3">
-                     <button class="btn">9</button>
-                  </div>
-                  <div class="col-3">
-                     <button class="btn btn-warning">x</button>
-                  </div>
-                </div>
-                <!-- row -->
-               <div class="row">
-                  <div class="col-3">
-                     <button class="btn">4</button>
-                  </div>
-                  <div class="col-3">
-                        <button class="btn">5</button>
-                     </div>
-                  <div class="col-3">
-                     <button class="btn">6</button>
-                  </div>
-                  <div class="col-3">
-                     <button class="btn btn-warning">-</button>
-                  </div>
-                </div>
-                <!-- row -->
-               <div class="row">
-                  <div class="col-3">
-                     <button class="btn">1</button>
-                  </div>
-                  <div class="col-3">
-                        <button class="btn">2</button>
-                     </div>
-                  <div class="col-3">
-                     <button class="btn">3</button>
-                  </div>
-                  <div class="col-3">
-                     <button class="btn btn-warning">+</button>
-                  </div>
-                </div>
-                <!-- row -->
-               <div class="row">
-                  <div class="col-6">
-                     <button class="btn">0</button>
-                  </div>
-                  <div class="col-3">
-                     <button class="btn">.</button>
-                  </div>
-                  <div class="col-3">
-                     <button class="btn btn-warning">=</button>
-                  </div>
-                </div>
-                <!-- row -->
-                
-                
-             </div>
           </div>
+
        </div>
        
     </div>
