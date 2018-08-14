@@ -3,38 +3,27 @@ $(document).ready(function(){
 
    // Adding
 
-   var equals     = $('#equals');
    var add        = $('#add');
-   var subtract   = $('subtract');
+   var subtract   = $('#subtract');
    var multiply   = $('#multiply');
    var sum        = 0;
-   var numbOne    = 0;
-   var numbTwo    = 0;
+   var numArray = [];
    var clickCount = 0;
 
    $('.num').click(function(){
       clickCount++;
-
-      if(clickCount === 1){
-         numbOne = $(this).val();
-         console.log(numbOne);
+      if(clickCount >= 1){
+         numArray.push($(this).val());
+         console.log('num array: ' + numArray);
       }
-      if(clickCount === 2){
-         numbTwo = $(this).val();
-         console.log(numbTwo);
-      }
-
-      console.log(clickCount);
-
-      switch(sum){
-         case add:
-         sum = numbOne + numTwo;
-         console.log('sum: ' + sum);
-      }
-
-
-
    })
+
+   $('#equals').click(function(){
+      numArray.forEach(function(num){
+         sum += parseFloat(num) || 0;
+      });
+      console.log('sum: ' + sum);
+   });
 
 
 
